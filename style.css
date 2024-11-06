@@ -1,0 +1,196 @@
+:root{
+    --text-mult: 1.2;
+}
+
+
+/*Navigation*/
+.bigNav {
+    position: -webkit-sticky; /* For Safari */
+    position: sticky;
+    top: 0px;
+    margin: 0 0 0 0;
+    padding: 0px 0px 0px 0px;
+}
+.infoNav{
+    display: flex;
+    @media (max-width: 600px) {
+        display: block; /* Adjust info Nav for smaller screens */
+    }
+    background-color: #000000;
+}
+.infoNavA{
+    color:#fff;
+    background-color: #000000;
+    padding: 0px 60px;
+    translate: -50px 0px;
+}
+nav {
+	background-color: #444;
+    padding: 0px;
+    text-align: center;
+
+    top: 0;
+    z-index: 1000; /* Ensures it stays on top of other content */
+	display: flex; /* Use Flexbox */
+    justify-content: center; /* Center the links horizontally */
+}
+nav a {
+	color: #fff;
+    margin: 0 0px;
+    text-decoration: none;
+    font-weight: bold;
+	
+    padding: 20px 35px; /* Add padding to make the link area bigger */
+    /* Media query for smaller screens (below 600px) */
+    @media (max-width: 600px) {
+    padding: 20px 20px; /* Adjust padding for smaller screens */
+    }
+    
+    display: inline-block; /* Make the links behave like blocks */
+    background-color: #444; /* Initial background color */
+    /*border-radius: 5px; /* Optional: round the corners */
+}
+nav a:hover {
+/*background-color: #000000;*/
+	color: #000000;
+    text-decoration: underline;
+	background-color: #F9DB57;
+}
+
+
+/*Gemini*/
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+section {
+    padding: 20px;
+}
+
+.service {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.service.right-image {
+    /*flex-direction: row-reverse;*/
+    background-color: #e0f2fe; /* Light blue background */
+}
+
+.service .image-container,
+.service .text-container {
+    flex: 1;
+    padding: 20px;
+}
+
+.service img {
+    max-width: 100%;
+}
+/* End Gemini*/
+
+
+.container { /*LARGER CONTAINTER*/
+	max-width: 1200px;
+    margin: 20px auto;
+    padding: 0 20px;
+	min-height: 50vh;
+	text-align: justify;
+}
+.header-image-index {
+	width: 50%;
+	height: auto;
+	padding: 0; /* Ensure the image itself has no padding */
+    margin: 0;  /* Ensure the image has no margin */
+	display: block; /* Removes any inline spacing below the image */
+}
+.header-text {
+	width: 50%;
+	height: auto;
+	padding: 0; /* Ensure the image itself has no padding */
+    margin: 0;  /* Ensure the image has no margin */
+    font-size: xx-large;
+    align-content: center;
+    text-align: center;
+    color: #000000;
+    font-weight: bold;
+}
+header{
+    display: flex;
+    margin:0;
+    padding:0;
+
+    background-image: url("images/headerBackground.jpg");
+    background-size: cover; /* This makes the image cover the entire element */
+    background-position: center; /* This centers the image */
+    background-repeat: no-repeat; /* This prevents the image from repeating */
+}
+.header-image {
+	width: 100%;
+	height: auto;
+	padding: 0; /* Ensure the image itself has no padding */
+    margin: 0;  /* Ensure the image has no margin */
+	display: block; /* Removes any inline spacing below the image */
+}
+.h1container{
+    margin: 20px auto;
+    padding: 0 40px;
+    max-width: 1200;
+}
+h1{
+    font-size: calc(32px * var(--text-mult));
+}
+body{
+    font-size: calc(16px * var(--text-mult));
+}
+footer{
+	clear: both;
+}
+
+
+/*About*/
+.about-container {
+    /*display: flex;*/
+    align-items: center;
+
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 0 20px;
+    min-height: 50vh;
+}
+.about-image {
+    float: left;
+    width: 50%;
+    --margin-size: 20px;
+    margin-right: var(--margin-size);
+    margin-bottom: var(--margin-size);
+}
+
+
+/*Contact*/
+.contact-container{
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 0 20px;
+    min-height: 50vh;
+    text-align: justify;
+}
